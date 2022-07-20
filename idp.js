@@ -1,7 +1,7 @@
 const axios = require("axios")
 const idp = async (prof) => {
     axios({
-        url: `https://www.instagram.com/${prof}/?__a=1/`,
+        url: `https://www.instagram.com/${prof}/?__a=1&__d=dis/`,
         method: 'GET',
         responseType: 'streamarraybuffer'
     }).then((res) => {
